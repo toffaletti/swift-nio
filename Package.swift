@@ -39,6 +39,8 @@ var targets: [PackageDescription.Target] = [
             dependencies: ["NIO", "NIOConcurrencyHelpers"]),
     .target(name: "NIOHTTP1Server",
             dependencies: ["NIO", "NIOHTTP1", "NIOConcurrencyHelpers"]),
+    .target(name: "WTFutex",
+            dependencies: ["NIO", "NIOConcurrencyHelpers"]),
     .target(name: "CNIOHTTPParser"),
     .target(name: "CNIOZlib"),
     .target(name: "NIOTLS", dependencies: ["NIO"]),
